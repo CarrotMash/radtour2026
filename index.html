@@ -27,7 +27,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--dark);min
 .hero{position:relative;min-height:100vh;background:var(--charcoal);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
 .hero-photo{position:absolute;inset:0;background-size:cover;background-position:center 30%;opacity:.45;}
 .hero-gradient{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,28,28,.6) 0%,rgba(28,28,28,.08) 38%,rgba(28,28,28,.08) 55%,rgba(28,28,28,.88) 100%);z-index:1;}
-.hero-content{position:relative;z-index:10;text-align:center;padding:0 24px 0;}
+.hero-content{position:relative;z-index:10;text-align:center;padding:0 24px 56px;}
 .hero-eyebrow{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:var(--orange-light);margin-bottom:8px;}
 .hero-title{font-family:'Oswald',sans-serif;font-size:2.8rem;font-weight:700;color:white;letter-spacing:3px;text-transform:uppercase;line-height:1.05;text-shadow:0 3px 20px rgba(0,0,0,.7);margin-bottom:6px;}
 .hero-title span{color:var(--orange-light);}
@@ -506,7 +506,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--dark);min
 <!-- ===================== ETAPPEN ===================== -->
 <div id="etappen" class="section">
   <div class="section-header">Etappen</div>
-  <div class="section-subheader">Rottweil bis Heidelberg · 6.–13. September 2026</div>
+  <div class="section-subheader">Rottweil bis Heidelberg · 6.–13. September 2026 · inkl. Ruhetag &amp; Rückreise</div>
 
   <div class="etappe-item" id="e0" onclick="toggleEtappe('e0')">
     <div class="etappe-header">
@@ -627,30 +627,71 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--dark);min
   <div class="etappe-item" id="e5" onclick="toggleEtappe('e5')">
     <div class="etappe-header">
       <div class="etappe-day-num">11</div>
-      <div class="etappe-info"><div class="e-wday">Freitag · Etappe 5 + Ruhetag</div><div class="e-city">Eberbach → Heidelberg</div><div class="e-date">11.–12. September 2026</div></div>
+      <div class="etappe-info"><div class="e-wday">Freitag · Etappe 5</div><div class="e-city">Eberbach → Heidelberg</div><div class="e-date">11. September 2026</div></div>
       <div class="etappe-badge">🚴 38 km</div>
       <div class="etappe-chevron">▼</div>
     </div>
     <div class="etappe-body">
       <div class="subsection-title">Strecke</div>
       <div class="detail-row"><div class="d-icon">📏</div><div class="d-text"><strong>38 km</strong> – kurze Schlussetappe, entspannt ankommen</div></div>
-      <div class="detail-row"><div class="d-icon">🌟</div><div class="d-text"><strong>2 Übernachtungen</strong> in Heidelberg (Fr. &amp; Sa.) · Abreise So. 13.09.</div></div>
-      <div class="subsection-title">Unterkunft</div>
       <div class="detail-row"><div class="d-icon">🏨</div><div class="d-text"><strong>Hotel Tannhäuser, Heidelberg</strong> · <span class="price">EZ 110,50 € / DZ 144 €</span> · mit Frühstück</div></div>
-      <div class="subsection-title">Highlights Heidelberg</div>
+      <div class="subsection-title">Highlights Heidelberg – Abend</div>
       <ul class="bullet-list">
-        <li><strong>Heidelberger Schloss</strong> – Abend-Illumination freitags und samstags!</li>
+        <li><strong>Heidelberger Schloss</strong> – Abend-Illumination freitags!</li>
         <li><strong>Alte Brücke</strong> – Karl-Theodor-Brücke, Brückentor, Brückenaffenskulptur</li>
-        <li><strong>Philosophenweg</strong> – Abend-Spaziergang mit Panoramablick über die Stadt</li>
-        <li><strong>Hauptstraße</strong> – eine der längsten Fußgängerzonen Deutschlands</li>
-        <li><strong>Studentenkarzer</strong> – historisches Uniprison, Voranmeldung empfohlen</li>
-        <li>Abschluss: <strong>Vetter's Brauhaus</strong> – Heidelberger Institution seit 1848</li>
+        <li><strong>Philosophenweg</strong> – Abend-Spaziergang mit Panoramablick</li>
+        <li>Abschluss-Bier: <strong>Vetter's Brauhaus</strong> – Heidelberger Institution seit 1848</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="etappe-item" id="e6" onclick="toggleEtappe('e6')">
+    <div class="etappe-header">
+      <div class="etappe-day-num">12</div>
+      <div class="etappe-info"><div class="e-wday">Samstag · Ruhetag</div><div class="e-city">Heidelberg erkunden</div><div class="e-date">12. September 2026</div></div>
+      <div class="etappe-badge">🏖 Ruhetag</div>
+      <div class="etappe-chevron">▼</div>
+    </div>
+    <div class="etappe-body">
+      <div class="detail-row"><div class="d-icon">😴</div><div class="d-text"><strong>Kein Radfahren</strong> – zweite Nacht im Hotel Tannhäuser</div></div>
+      <div class="detail-row"><div class="d-icon">🏨</div><div class="d-text"><strong>Hotel Tannhäuser, Heidelberg</strong> · <span class="price">EZ 110,50 € / DZ 144 €</span> · mit Frühstück</div></div>
+      <div class="subsection-title">Heidelberg – Ganztägig</div>
+      <ul class="bullet-list">
+        <li><strong>Heidelberger Schloss</strong> – bei Tageslicht erkunden, Deutsches Apothekenmuseum</li>
+        <li><strong>Kurpfälzisches Museum</strong> – <strong>samstags freier Eintritt!</strong></li>
+        <li><strong>Alte Universität &amp; Studentenkarzer</strong> – historisches Uniprison</li>
+        <li><strong>Schlossbeleuchtung samstags</strong> – abends spektakuläres Lichtspektakel</li>
+        <li><strong>Philosophenweg</strong> – mit Zeit und ohne Gepäck genießen</li>
+        <li>Abschlussabend: <strong>Roter Ochse</strong> oder <strong>Vetter's Brauhaus</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="etappe-item" id="e7" onclick="toggleEtappe('e7')">
+    <div class="etappe-header">
+      <div class="etappe-day-num">13</div>
+      <div class="etappe-info"><div class="e-wday">Sonntag · Rückreise</div><div class="e-city">Heidelberg → Kiel / Flensburg</div><div class="e-date">13. September 2026</div></div>
+      <div class="etappe-badge">🚂 Zug</div>
+      <div class="etappe-chevron">▼</div>
+    </div>
+    <div class="etappe-body">
+      <div class="subsection-title">Rückreise</div>
+      <div class="detail-row"><div class="d-icon">🕗</div><div class="d-text"><strong>08:46 Uhr</strong> – ICE 1098 ab Heidelberg Hbf</div></div>
+      <div class="detail-row"><div class="d-icon">🔀</div><div class="d-text"><strong>Frankfurt Hbf 09:40</strong> – Umstieg auf ICE 78 · Abfahrt 09:58 Uhr <strong style="color:#CC2200">(18 Min. Umstieg!)</strong></div></div>
+      <div class="detail-row"><div class="d-icon">🏙</div><div class="d-text"><strong>Hamburg Hbf: Ankunft 13:36 Uhr</strong></div></div>
+      <div class="detail-row"><div class="d-icon">🌊</div><div class="d-text"><strong>→ Kiel:</strong> ab Hamburg 14:43 → Kiel 15:17 Uhr</div></div>
+      <div class="detail-row"><div class="d-icon">🌊</div><div class="d-text"><strong>→ Flensburg:</strong> ab Hamburg 14:43 → Flensburg 16:40 Uhr</div></div>
+      <div class="subsection-title">Wichtig</div>
+      <ul class="bullet-list">
+        <li>Fahrrad-Reservierung im ICE nicht vergessen!</li>
+        <li>Umstieg Frankfurt: 18 Minuten – mit Rädern zügig zum Anschlussgleis</li>
+        <li>Hotel-Checkout: spätestens 11:00 Uhr (bitte vorab bestätigen)</li>
       </ul>
     </div>
   </div>
 
   <div class="bnav-spacer"></div>
-  <div class="footer"><span>Heilig&#39;s Blechle-Tour 2026</span> · 06.–13. September · 319 km</div>
+  <div class="footer"><span>Heilig&#39;s Blechle-Tour 2026</span> · 06.–13. September · 8 Tage · 319 km</div>
 </div>
 
 <!-- ===================== UNTERKÜNFTE ===================== -->
